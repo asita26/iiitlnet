@@ -48,7 +48,7 @@ const CreatePost = () => {
                           if (sessionStorage.getItem("auth-token")) {
                             axios
                               .post(
-                                `http://localhost:5000/addpost`,
+                                `https://2428-117-219-22-193.ngrok-free.app/addpost`,
                                 {
                                    desc: desc,
                                    name: sessionStorage.getItem('fName')+" "+sessionStorage.getItem('lName'),
@@ -81,7 +81,7 @@ const CreatePost = () => {
             if (sessionStorage.getItem("auth-token")) {
                 axios
                   .post(
-                    `http://localhost:5000/addpost`,
+                    `https://2428-117-219-22-193.ngrok-free.app/addpost`,
                     {
                        desc: desc,
                        name: sessionStorage.getItem('fName')+" "+sessionStorage.getItem('lName'),

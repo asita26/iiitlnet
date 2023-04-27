@@ -76,7 +76,7 @@ export default function EditProfile() {
                         )
                         axios
                         .post(
-                          `http://localhost:5000/user/edit`,
+                          `https://2428-117-219-22-193.ngrok-free.app/user/edit`,
                           {
                             fName: fName,
                             lName: lName,

@@ -27,7 +27,7 @@ function Profile() {
     if (token) {
       console.log("check 7")
       axios
-        .get(`http://localhost:5000/people/main `, {
+        .get(`https://2428-117-219-22-193.ngrok-free.app/people/main `, {
           headers: {
             "auth-token": token,
           },

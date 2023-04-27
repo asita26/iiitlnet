@@ -37,7 +37,7 @@ function Signup() {
     ) {
       console.log("check")
       axios
-        .post(`http://localhost:5000/register`, object)
+        .post(`https://2428-117-219-22-193.ngrok-free.app/register`, object)
         .then((res) => {
           if (res.data.error) {
             toast( res.data.error)
@@ -104,7 +104,7 @@ function Signup() {
     event.preventDefault();
     console.log("checlk2")
     axios
-      .post(`http://localhost:5000/login`, {
+      .post(`https://2428-117-219-22-193.ngrok-free.app/login`, {
         email: email,
         password: pass,
       })
